@@ -10,8 +10,12 @@ html(lang='en')
 
   body(class=bodyclass)
     block content
-      p.
-        Si vous voyez ceci c'est que tout fonctionne :)
 
+      .strip: .wrapper: #fold: include fold.jade
+      .strip: .wrapper: #video: include video.jade
+      .strip: .wrapper: #testimonials: include testimonials.jade
+      .strip: .wrapper: #details: include details.jade
+      .strip: .wrapper: #team: include team.jade
+      .strip: .wrapper: #footer: include footer.jade
 
     include scripts.jade
