@@ -1,0 +1,14 @@
+doctype html
+html(lang='en')
+  head
+    block head
+      title
+        block title
+          = locals.name
+
+      include head.jade
+
+  body(class=bodyclass)
+    block content
+
+    include scripts.jade
